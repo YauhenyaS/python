@@ -14,6 +14,7 @@ count = 0
 if n > 0:
     for i in range(1, n+1, 1):
         A.append(i)
-    for e in A:
-        if A[e] == x-1 or A[e] == x: # не понимаю, почему он мне здесь бросает IndexError  и первое условие не работает с цифрой 2!
+    for e in range(len(A)):
+        if A[e] == x-1 or A[e] == x:
             print(A[e])
+            print(A)
